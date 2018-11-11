@@ -1,7 +1,7 @@
 
 
 // Timer
-var counter = 5;
+var counter = 30;
 var timer;
 
 var timer = setInterval(countdown, 1000);
@@ -29,11 +29,11 @@ $(document).ready(function () {
 
             for (letter in currentQuestion.answers) {
                 answers.push(
-                    `<label>
-                  <input type="radio" name="question${questionNumber}" value="${letter}">
-                  ${letter} :
-                  ${currentQuestion.answers[letter]}
-                </label>`
+                    '<label>'
+                  + '<input type="radio" name="question' + i + '" value="' + letter + '">'
+                  + letter + ': '
+                  + currentQuestion[i].answers[letter]
+                + '</label>'
                 );
             }
 
