@@ -5,155 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Trivia Game</title>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Quiz</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <body>
 
-    <script src="assets/javascript/app.js"></script>
+    <div class="container-header">
+        <h1>Quiz</h1>
 
-    <div class="jumbotron">
-        <h1 class="text-center">Totally Trivial Trivia</h1>
-        <h3 class="text-center">Answer the quiz below, you have 1 minute</h3>
+        <div id="timer">Time remaining:</div>
+        <hr style="margin-bottom: 20px">
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md">
-            </div>
-            <div class="col-md">
-                <div id="display">00:00</div>
-            </div>
-            <div class="col-md">
-            </div>
-        </div>
+    <div class="grid">
+        <div id="quiz"></div>
     </div>
 
-    <br>
+    <hr style="margin-top: 50px">
 
-    <div class="container">
-            <div class="row">
-                <div class="col-md">
-                </div>
-                <div class="col-md-auto">
-                    <button type="button" id="start-quiz" class="btn btn-primary btn-lg">Start</button>
-                </div>
-                <div class="col-md">
-                </div>
-            </div>
-        </div>
-
-
-    <div>
-        <div class="col-md-auto">
-        </div>
-        <div class="col-md-auto">
-            <p>1. What two sisters faced each ojahdsgfuyasdgfsvdftyvsydtfvsytdfvystdvfytsdvfytsvther in the finals of
-                the French Open, Wimbledon, and US Open in 2002?</p>
-            <select class="custom-select">
-                <option selected>Open this select menu</option>
-                <option value="1">Venus and Serena Williams</option>
-                <option value="2">Ana Kournikova</option>
-                <option value="3">Maria Sharapova</option>
-            </select>
-        </div>
-        <div class="col-md-auto">
-        </div>
-    </div>
-
-    <br>
-
-    <div>
-        <div class="col-md-auto">
-        </div>
-        <div class="col-md-auto">
-            <p>1. What two sisters faced each ojahdsgfuyasdgfsvdftyvsydtfvsytdfvystdvfytsdvfytsvther in the finals of
-                the French Open, Wimbledon, and US Open in 2002?</p>
-            <select class="custom-select">
-                <option selected>Open this select menu</option>
-                <option value="1">Venus and Serena Williams</option>
-                <option value="2">Ana Kournikova</option>
-                <option value="3">Maria Sharapova</option>
-            </select>
-        </div>
-        <div class="col-md-auto">
-        </div>
-    </div>
-
-    <br>
-
-    <div>
-        <div class="col-md-auto">
-        </div>
-        <div class="col-md-auto">
-            <p>1. What two sisters faced each ojahdsgfuyasdgfsvdftyvsydtfvsytdfvystdvfytsdvfytsvther in the finals of
-                the French Open, Wimbledon, and US Open in 2002?</p>
-            <select class="custom-select">
-                <option selected>Open this select menu</option>
-                <option value="1">Venus and Serena Williams</option>
-                <option value="2">Ana Kournikova</option>
-                <option value="3">Maria Sharapova</option>
-            </select>
-        </div>
-        <div class="col-md-auto">
-        </div>
-    </div>
-
-    <br>
-
-    <div>
-        <div class="col-md-auto">
-        </div>
-        <div class="col-md-auto">
-            <p>1. What two sisters faced each ojahdsgfuyasdgfsvdftyvsydtfvsytdfvystdvfytsdvfytsvther in the finals of
-                the French Open, Wimbledon, and US Open in 2002?</p>
-            <select class="custom-select">
-                <option selected>Open this select menu</option>
-                <option value="1">Venus and Serena Williams</option>
-                <option value="2">Ana Kournikova</option>
-                <option value="3">Maria Sharapova</option>
-            </select>
-        </div>
-        <div class="col-md-auto">
-        </div>
-    </div>
-
-    <br>
-
-    <div>
-        <div class="col-md-auto">
-        </div>
-        <div class="col-md-auto">
-            <p>1. What two sisters faced each ojahdsgfuyasdgfsvdftyvsydtfvsytdfvystdvfytsdvfytsvther in the finals of
-                the French Open, Wimbledon, and US Open in 2002?</p>
-            <select class="custom-select">
-                <option selected>Open this select menu</option>
-                <option value="1">Venus and Serena Williams</option>
-                <option value="2">Ana Kournikova</option>
-                <option value="3">Maria Sharapova</option>
-            </select>
-        </div>
-        <div class="col-md-auto">
-        </div>
-    </div>
-
-    <br>
-
-    <div class="container">
+    <div class="container-button">
         <div class="row">
             <div class="col-md">
             </div>
             <div class="col-md-auto">
-                <button type="button" id="done-quiz" class="btn btn-primary btn-lg">Done</button>
+                <button type="button" id="submit" class="btn btn-primary btn-lg">Done</button>
             </div>
             <div class="col-md">
             </div>
         </div>
     </div>
 
-</body>
+    <div id="results"></div>
 
-</html>
+
+    <script src="assets/javascript/app-v3.js"></script>
+
+
+</body>

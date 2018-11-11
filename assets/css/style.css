@@ -1,6 +1,69 @@
+body {
+    background-color: #eeeeee;
+}
+
 #display {
     font-family: monospace;
     font-size: 100px;
     color: gray;
     text-align: center;
+}
+
+.container-header {
+    text-align: center;
+    margin: auto;
+    padding: 10px 50px 50px 50px;
+   
+}
+
+.grid {
+    width: 600px;
+    height: 500px;
+    margin: o auto;
+    background-color: #fff;
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    border: 2px solid #cbcbcb;
+    box-shadow: 10px 15px 5px #cbcbcbcb;
+}
+
+.question {
+    font-weight: 600;
+}
+
+.answers {
+    margin-bottom: 20px;
+} 
+
+
+  .grid #question {
+    font-family: sans-serif;
+    font-size: 30px;
+    color: black
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+
+#btn0, #btn1, #btn2, #btn3 {
+    background-color: #22bb22;
+    width: 250px;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #11dd33;
+    border-radius: 50px;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+}
+
+
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+}
+
+
+#progress {
+    color: #22bb22;
+    font-size: 10px;
 }
