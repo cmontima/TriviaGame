@@ -65,7 +65,7 @@ $(document).ready(function () {
             }
         });
 
-        resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+        resultsContainer.innerHTML = numCorrect + ' out of ' + myQuestions.length;
     }
 
     const quizContainer = document.getElementById("quiz");
@@ -124,20 +124,3 @@ $(document).ready(function () {
 
     submitButton.addEventListener("click", showResults);
 });
-
-
-
-
-
-
-
-
-// Style the quiz nicely.
-//Add a progress bar.
-// Let users review answers before submitting.
-// Give users a summary of their answers after they submit.
-// Update the navigation to let users skip to any question number.
-// Create custom messages for each level of results. For example, if someone scores 8/10 or higher, call them a quiz ninja.
-// Add a button to share results to social media.
-// Save your high scores using localStorage.
-// Add a countdown timer to see if people can beat the clock.
